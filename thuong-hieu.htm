@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brands</title> 
+    <!-- Cài đặt bs4-css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- Cai dat FA4.7 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Cai dat icon bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link href="https://fonts.cdnfonts.com/css/palace-script-mt" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+            <a class="navbar-brand" href="#">
+                <img style="height: 50px; border-radius: 50%; "
+                    src="https://scontent.fhan2-3.fna.fbcdn.net/v/t39.30808-6/276308969_522317632696493_6201340963703098825_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=174925&_nc_ohc=c3IC5Lgchd8AX_gvppa&_nc_ht=scontent.fhan2-3.fna&oh=00_AfAJMfwTlot8eweSyoOvlUTTGG22pEIm72OMZS9AArFuRg&oe=63BE7C5E"
+                    alt="">
+                <!-- <span style="font-family:'Palace Script MT', sans-serif; font-size: 40px;">
+                    Thế Tùng Auto
+                </span> -->
+                <span style="font-family:sans-serif; font-size: 25px;">
+                    Shop giày
+                </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05"
+                aria-controls="navbarsExample05" aria-expanded="false" aria-label="Chuyển đổi điều hướng thành">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarsExample05">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="trang-chu.htm">
+                            <i class="bi bi-house-heart"></i> Trang chủ
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gioi-thieu.htm">
+                            <i class="bi-file-person"></i> Giới Thiệu
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="lien-he.htm">
+                            <i class="bi-person-lines-fill"></i> Liên Hệ
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tin-bai.htm">
+                            <i class="bi-newspaper"></i> Tin Bài
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="http://example.com" id="dropdown05"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <font style="vertical-align: inherit;"><i class="bi-bag"></i> Mua Sắm</font>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown05">
+                            <a class="dropdown-item" href="danh-muc.htm">
+                                <i class="bi bi-list"></i> Danh Mục
+                            </a>
+                            <a class="dropdown-item" href="san-pham.htm">
+                                <i class="bi bi-tags"></i> Sản Phẩm
+                            </a>
+                            <a class="dropdown-item active" href="thuong-hieu.htm">
+                                <i class="bi bi-apple"></i> Thương Hiệu
+                            </a>
+                            <a class="dropdown-item" href="gio-hang.htm">
+                                <i class="bi-cart-check"></i> Giỏ Hàng
+                            </a>
+                            <a class="dropdown-item" href="thanh-toan.htm">
+                                <i class="bi-cash"></i> Thanh Toán
+                            </a>
+                        </div>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link disabled" href="#">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Vô hiệu hóa</font>
+                            </font>
+                        </a>
+                    </li> -->
+
+                </ul>
+                <!-- <form class="form-inline my-2 my-md-0">
+                    <input class="form-control" type="text" placeholder="Tìm kiếm" fdprocessedid="mysh4n">
+                </form> -->
+                <div class=" dropdown">
+                    <a class=" dropdown-toggle" href="#" id="dropdown05" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        <font style="vertical-align: inherit;"> <i class="fa fa-user"></i>Tài Khoản</font>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown05">
+                        <a class="dropdown-item" href="tai-khoan/dang-ky.htm">
+                            <font style="vertical-align: inherit;">
+                                <i class="fa fa-user-plus"></i> Đăng Ký
+                            </font>
+                        </a>
+                        <a class="dropdown-item" href="tai-khoan/dang-nhap.htm">
+                            <font style="vertical-align: inherit;">
+                                <i class="fa fa-sign-in"></i> Đăng Nhập
+                            </font>
+                        </a>
+                        <a class="dropdown-item" href="trang-chu.htm">
+                            <font style="vertical-align: inherit;">
+                                <i class="fa fa-sign-out"></i> Đăng Xuất
+                            </font>
+                        </a>
+                        <hr style="margin: 0;">
+                        <a class="dropdown-item" href="tai-khoan/sua.htm">
+                            <font style="vertical-align: inherit;">
+                                <i class="fa fa-pencil"></i> Sửa
+                            </font>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <!-- Phân loại sản phẩm, danh mục -->
+        <div class="nav-scroller py-1 mb-2">
+            <nav class="nav d-flex justify-content-between">
+                <a class="p-2 text-muted" href="#">giày cũ</a>
+                <a class="p-2 text-muted" href="#">giày Mới</a>
+                <a class="p-2 text-muted" href="#">giày Thể thao</a>
+                <a class="p-2 text-muted" href="#">giày Jordance</a>
+                <a class="p-2 text-muted" href="#">giày Nike</a>
+                <a class="p-2 text-muted" href="#">giày Bản giới hạn</a>
+                <a class="p-2 text-muted" href="#">giày mới nhất</a>
+                <a class="p-2 text-muted" href="#">giày Sneacker</a>
+
+                <!-- <form class="form-inline my-2 my-md-0">
+                <input class="form-control" type="text" placeholder="Tìm kiếm" fdprocessedid="mysh4n">
+            </form> -->
+            </nav>
+        </div>
+
+        <!-- Thanh công cụ -->
+        <div class="my-2 btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
+            <div class="btn-group" role="group" aria-label="First group" >
+                <button type="button" title="Hiển thị dạng lướt" class="btn btn-secondary">  <i class="bi-grid-fill"></i></button>
+                <button type="button" title="Hiển thị dạng danh sách" class="btn btn-secondary">  <i class="bi-list"></i></button>
+            </div>
+            <div class="input-group">
+                <!-- <div class="input-group-prepend">
+                    <div class="input-group-text" id="btnGroupAddon2">
+                        <i class="bi-search"></i>
+                    </div>
+                </div> -->
+                <input type="text" class="form-control" placeholder="Tìm kiếm"
+                    aria-label="Input group example" aria-describedby="btnGroupAddon2">
+                    <div class="input-group-append">
+                        <button class="btn btn-dark btn-outline-secondary" type="button" fdprocessedid="ewx729"><i class="bi-search"></i></button>
+                     </div>
+            </div>
+        </div>
+
+        <div class="album py-5 bg-light">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <img class="card-img-top"
+                                data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                                alt="Hình thu nhỏ [100%x225] "
+                                src="https://laforce.vn/wp-content/uploads/2021/02/giay-thuong-hieu-viet.jpg"
+                                data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                            <div class="card-body">
+                                <h3><a href="https://www.rolex.com/">BITISS</a> </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <img class="card-img-top"
+                                data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                                alt="Hình thu nhỏ [100%x225]"
+                                src="https://admin.thegioigiay.com/upload/news/content/2022/05/giay-puma-cua-nuoc-nao-8-jpg-1653378273-24052022144433.jpg"
+                                data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                            <div class="card-body">
+                             <h3><a href="https://www.hublot.com/">PUMA</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <img class="card-img-top"
+                                data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                                alt="Hình thu nhỏ [100%x225]"
+                                src="https://cdn.tgdd.vn/Files/2021/02/01/1324570/top-7-thuong-hieu-giay-the-thao-nu-dep-thoi-trang-cho-cac-co-nang-yeu-the-thao-202102011554545973.jpg"
+                                data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                            <div class="card-body">
+                              <h3><a href="https://www.longines.com/">NEW BALANCE </a></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <img class="card-img-top"
+                                data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                                alt="Hình thu nhỏ [100%x225]"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt30ztA6EZ35VSEC64otq2YtoFElY-uLnBuQ&usqp=CAUS"
+                                data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                            <div class="card-body">
+                              <h3><a href="https://www.lacoste.com">GEM SNEACKER  </a></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <img class="card-img-top"
+                                data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                                alt="Hình thu nhỏ [100%x225]"
+                                src="https://static.ybox.vn/2023/6/5/1686243957150-Logo-ko-slogan.png"
+                                data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                            <div class="card-body">
+                            <h3><a href="https://www.chopard.com/">ANCOL </a></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <img class="card-img-top"
+                                data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                                alt="Hình thu nhỏ [100%x225]"
+                                src="https://png.pngtree.com/template/20191218/ourlarge/pngtree-sneaker-shoe-logos-can-be-used-for-store-logos-or-shoe-image_340677.jpg"
+                                data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                            <div class="card-body">
+                              <h3><a href="https://www.breguet.com/en">SNEACKER </a></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <img class="card-img-top"
+                                data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                                alt="Hình thu nhỏ [100%x225]"
+                                src="https://file.hstatic.net/1000260990/file/adidas_65d1f0f221b748a5a30ddd30398c476a_grande.png"
+                                data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                            <div class="card-body">
+                              <h3><a href="https://www.hamiltonwatch.com/">ADIDAS </a></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <img class="card-img-top"
+                                data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                                alt="Hình thu nhỏ [100%x225]"
+                                src="https://namtrungsafety.com/wp-content/uploads/2021/06/gucci.jpg"
+                                data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                            <div class="card-body">
+                              <h3><a href="https://www.zenith-watches.com/int">GUCCI </a></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <img class="card-img-top"
+                                data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                                alt="Hình thu nhỏ [100%x225]"
+                                src="data:image/png;base64,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"
+                                data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                            <div class="card-body">
+                              <h3><a href="https://www.certina.com/en">NIKE </a></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Phân trang -->
+        <div class=" btn-toolbar d-flex flex-row-reverse" role="toolbar" aria-label="Toolbar with button groups">
+            <div class="btn-group" role="group" aria-label="First group" >
+                <button type="button" class="btn btn-secondary">1</button>
+                <button type="button" class="btn btn-secondary">2</button>
+                <button type="button" class="btn btn-secondary">3</button>
+                <button type="button" class="btn btn-secondary">4</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="container" style="text-align: center;">
+        <hr style="border: 1px solid gray;">
+        <span>&copy; 2022. shop giày</span>
+
+    </footer>
+
+    <!-- Cài đặt bs4-js -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+</body>
+<!-- <style>
+    .col-md-4{
+        min-height: 400px;
+    }
+</style> -->
+
+</html>

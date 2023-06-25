@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <!-- Cài đặt bs4-css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- Cai dat FA4.7 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Cai dat icon bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link href="https://fonts.cdnfonts.com/css/palace-script-mt" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+            <a class="navbar-brand" href="#">
+                <img style="height: 50px; border-radius: 50%; "
+                    src="https://scontent.fhan2-3.fna.fbcdn.net/v/t39.30808-6/276308969_522317632696493_6201340963703098825_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=174925&_nc_ohc=c3IC5Lgchd8AX_gvppa&_nc_ht=scontent.fhan2-3.fna&oh=00_AfAJMfwTlot8eweSyoOvlUTTGG22pEIm72OMZS9AArFuRg&oe=63BE7C5E"
+                    alt="">
+                <!-- <span style="font-family:'Palace Script MT', sans-serif; font-size: 40px;">
+                    Thế Tùng Auto
+                </span> -->
+                <span style="font-family:sans-serif; font-size: 25px;">
+                    Shop giày
+                </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05"
+                aria-controls="navbarsExample05" aria-expanded="false" aria-label="Chuyển đổi điều hướng thành">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarsExample05">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="trang-chu.htm">
+                            <i class="bi bi-house-heart"></i> Trang chủ
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="gioi-thieu.htm">
+                            <i class="bi-file-person"></i> Giới Thiệu
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="lien-he.htm">
+                            <i class="bi-person-lines-fill"></i> Liên Hệ
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tin-bai.htm">
+                            <i class="bi-newspaper"></i> Tin Bài
+                        </a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown05"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <font style="vertical-align: inherit;"><i class="bi-bag"></i> Mua Sắm</font>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown05">
+                            <a class="dropdown-item" href="danh-muc.htm">
+                                <i class="bi bi-list"></i> Danh Mục
+                            </a>
+                            <a class="dropdown-item" href="san-pham.htm">
+                                <i class="bi bi-tags"></i> Sản Phẩm
+                            </a>
+                            <a class="dropdown-item" href="thuong-hieu.htm">
+                                <i class="bi bi-apple"></i> Thương Hiệu
+                            </a>
+                            <a class="dropdown-item" href="gio-hang.htm">
+                                <i class="bi-cart-check"></i> Giỏ Hàng
+                            </a>
+                            <a class="dropdown-item" href="thanh-toan.htm">
+                                <i class="bi-cash"></i> Thanh Toán
+                            </a>
+                        </div>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link disabled" href="#">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Vô hiệu hóa</font>
+                            </font>
+                        </a>
+                    </li> -->
+
+                </ul>
+                <!-- <form class="form-inline my-2 my-md-0">
+                    <input class="form-control" type="text" placeholder="Tìm kiếm" fdprocessedid="mysh4n">
+                </form> -->
+                <div class=" dropdown">
+                    <a class=" dropdown-toggle" href="#" id="dropdown05" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        <font style="vertical-align: inherit;"> <i class="fa fa-user"></i>Tài Khoản</font>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown05">
+                        <a class="dropdown-item" href="tai-khoan/dang-ky.htm">
+                            <font style="vertical-align: inherit;">
+                                <i class="fa fa-user-plus"></i> Đăng Ký
+                            </font>
+                        </a>
+                        <a class="dropdown-item" href="tai-khoan/dang-nhap.htm">
+                            <font style="vertical-align: inherit;">
+                                <i class="fa fa-sign-in"></i> Đăng Nhập
+                            </font>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <font style="vertical-align: inherit;">
+                                <i class="fa fa-sign-out"></i> Đăng Xuất
+                            </font>
+                        </a>
+                        <hr style="margin: 0;">
+                        <a class="dropdown-item" href="tai-khoan/sua.htm">
+                            <font style="vertical-align: inherit;">
+                                <i class="fa fa-pencil"></i> Sửa
+                            </font>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Giới Thiệu</h2>
+
+        <img alt="ảnh chân dung"
+            src="data:image/jpeg;base64,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" />
+
+       
+        <p>
+            Phil Knight, người sáng lập và chủ tịch điều hành Nike - một trong những thương hiệu giày lớn nhất toàn cầu tiết lộ những bí mật giúp ông tạo dựng công ty tỷ đô.
+
+        </p>
+        <p>
+            Knight từng theo học cử nhân tại trường Đại học Oregon và cao học tại trường Đại học Stanford. Ông từng là một học trò được huấn luyện bởi Bill Bowerman hồi còn học ở đại học Oregon, và sau đó, cặp đôi này đã cùng nhau sáng lập nên đế chế Nike.
+        </p>
+        <p>Ngay sau khi tốt nghiệp đại học Oregon, Knight được tuyển vào quân đội, ông thực hiện nghĩa vụ quân sự toàn thời gian trong 1 năm và sau đó là 7 năm trong lực lượng quân đội dự bị. Sau khi hoàn thành nghĩa vụ quân sự toàn thời gian, ông tham gia học tại trường cao học của đại học Stanford. Trong một buổi tham gia tiết học về Doanh nghiệp nhỏ của thầy giáo Frank Shallenberger, Knight dần dần nảy nở một thứ tình yêu khác ngoài thể thao - và ông nhận ra mình muốn khởi sự một doanh nghiệp. Knight nhớ lại trong lần phỏng vấn với tạp chí Stanford: "Buổi học đó quả là một khoảnh khắc "aha!"... Thầy giáo Shallenberger đã định nghĩa cho chúng tôi típ người sẽ là một doanh nhân trong tương lai, và rồi tôi nhận ra thầy ấy đang nói về chính tôi. Tôi nhớ rằng tôi đã tự nói thế này với chính mình: "Đây thực sự đúng là điều mà mình muốn làm." Trong giờ học này, thầy giáo giao cho Knight nhiệm vụ tự lập một kế hoạch kinh doanh. Ông đã viết ra giấy "Liệu giày thể thao của Nhật có thể vượt lên trên giày thể thao của Đức giống như cách máy ảnh của Nhật đã làm với máy ảnh của Đức?", đây cũng chính là tiền đề cho kế hoạch kinh doanh những đôi giày chạy của ông. Ông tốt nghiệp cao học ngành Quản trị kinh doanh tại trường vào năm 1962.
+
+            Knight tham gia một chuyến đi vòng quanh thế giới sau khi tốt nghiệp, trong chuyến đi ông có dừng chân tại Kobe, Nhật Bản vào tháng 11 năm 1962. Tại đây ông để ý tới thương hiệu giày chạy Tiger, được sản xuất tại Kobe bởi công ty Onitsuka Co. Kinh ngạc về chất lượng và giá thành của đôi giày, Knight liền liên lạc với giám đốc Onitsuka và được người này đồng ý gặp mặt. Sau buổi gặp mặt, Knight đã đảm bảo quyền phân phối những đôi giày hiệu Tiger tại miền tây nước Mỹ.[12]
+            
+            Mẫu giày Tiger đầu tiên mất hơn một năm để chuyển tới Knight, trong lúc ông đang làm kế toán tại Portland. Khi Knight nhận được mẫu giày, ông liền gửi hai đôi giày đến Bowerman tại trường đại học Oregon với hy vọng sẽ bán được cả hai đôi và có một người ủng hộ những mẫu giày này. Trái ngược với kỳ vọng của Knight, Bowerman không đặt đôi giày nào, nhưng ông đề nghị được làm đối tác với Knight và muốn cung cấp các ý tưởng thiết kế sản phẩm. Hai người đàn ông đồng ý trở thành đối tác của nhau thông qua một cú bắt tay vào ngày 25 tháng 1 năm 1964, đây cũng chính là ngày công ty Blue Ribbon Sports (BRS) được thành lập, một công ty tiền thân của Nike.[13]
+            
+            Những đơn hàng đầu tiên Knight bán được cho công ty là ở trên chiếc xe Plymouth Valiant màu xanh lục tại điểm giao nhau trên trục đường Tây Bắc Thái Bình Dương. Vào năm 1969, những đơn hàng đầu tiên này đã tiếp thêm động lực để ông từ bỏ công việc kế toán và tập trung toàn thời gian làm việc tại Blue Ribbon Sports.
+            
+            Jeff Johnson, nhân viên đầu tiên của Nike, là người đã gợi ý nên đặt lại tên công ty là "Nike" vì đây là tên của vị thần có cánh biểu tượng cho chiến thắng của Hy Lạp.[14] Blue Ribbon Sport sau đó đã đổi tên thành Nike vào năm 1971.[15]
+            
+            Logo "swoosh" của Nike, nay được coi là một trong những biểu tượng quyền lực nhất trên thế giới, ban đầu được thiết kế với giá chỉ 35 đô la Mỹ bởi sinh viên người Mỹ Carolyn Davidson vào năm 1971.[16] Theo trang web của Nike, Knight lúc đó nhận xét về logo như sau: "Tôi không thích nó, nhưng chắc về sau tôi sẽ thích." Vào tháng 9 năm 1983, Davidson đã được tưởng thuởng một lượng cổ phiếu không được tiết lộ từ Nike cho những đóng góp trong việc tạo nên thương hiệu của công ty. Trong chương trình truyền hình Oprah vào tháng 4 năm 2011, Knight cho biết đã cho Davidson "Vài trăm cổ phiếu" khi công ty lên sàn chứng khoán.[17]
+            
+            Trong thời gian tại vị ở Nike, Knight đã phát triển những mối quan hệ khá thân thiết với những vận động viên thể thao nổi tiếng nhất thế giới, trong đó có Michael Jordan và Tiger Woods.[18][19]
+            
+            </p>
+    </main>
+
+    <footer class="container" style="text-align: center;">
+        <hr style="border: 1px solid gray;">
+        <span>&copy;shop giày</span>
+    </footer>
+
+    <!-- Cài đặt bs4-js -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

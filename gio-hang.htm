@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <!-- Cài đặt bs4-css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- Cai dat FA4.7 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Cai dat icon bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link href="https://fonts.cdnfonts.com/css/palace-script-mt" rel="stylesheet">
+
+
+    <!-- Cài đặt bs4-js (Nếu không, Dropdown Menu Link sẽ không hoạt động đúng, chỉ Link mà ko dropdown)-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+            <a class="navbar-brand" href="#">
+                <img style="height: 50px; border-radius: 50%; "
+                    src="https://scontent.fhan2-3.fna.fbcdn.net/v/t39.30808-6/276308969_522317632696493_6201340963703098825_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=174925&_nc_ohc=c3IC5Lgchd8AX_gvppa&_nc_ht=scontent.fhan2-3.fna&oh=00_AfAJMfwTlot8eweSyoOvlUTTGG22pEIm72OMZS9AArFuRg&oe=63BE7C5E"
+                    alt="">
+                <!-- <span style="font-family:'Palace Script MT', sans-serif; font-size: 40px;">
+                    Thế Tùng Auto
+                </span> -->
+                <span style="font-family:sans-serif; font-size: 25px;">
+                    Shop Giày
+                </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05"
+                aria-controls="navbarsExample05" aria-expanded="false" aria-label="Chuyển đổi điều hướng thành">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarsExample05">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="trang-chu.htm">
+                            <i class="bi bi-house-heart"></i> Trang chủ
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gioi-thieu.htm">
+                            <i class="bi-file-person"></i> Giới Thiệu
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="lien-he.htm">
+                            <i class="bi-person-lines-fill"></i> Liên Hệ
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tin-bai.htm">
+                            <i class="bi-newspaper"></i> Tin Bài
+                        </a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown05" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            <font style="vertical-align: inherit;"><i class="bi-bag"></i> Mua Sắm</font>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown05">
+                            <a class="dropdown-item" href="danh-muc.htm">
+                                <i class="bi bi-list"></i> Danh Mục
+                            </a>
+                            <a class="dropdown-item" href="san-pham.htm">
+                                <i class="bi bi-tags"></i> Sản Phẩm
+                            </a>
+                            <a class="dropdown-item" href="thuong-hieu.htm">
+                                <i class="bi bi-apple"></i> Thương Hiệu
+                            </a>
+                            <a class="dropdown-item active" href="gio-hang.htm">
+                                <i class="bi-cart-check"></i> Giỏ Hàng
+                            </a>
+                            <a class="dropdown-item" href="thanh-toan.htm">
+                                <i class="bi-cash"></i> Thanh Toán
+                            </a>
+                        </div>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link disabled" href="#">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Vô hiệu hóa</font>
+                            </font>
+                        </a>
+                    </li> -->
+
+                </ul>
+                <!-- <form class="form-inline my-2 my-md-0">
+                    <input class="form-control" type="text" placeholder="Tìm kiếm" fdprocessedid="mysh4n">
+                </form> -->
+                <div class=" dropdown">
+                    <a class=" dropdown-toggle" href="#" id="dropdown05" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        <font style="vertical-align: inherit;"> <i class="fa fa-user"></i>Tài Khoản</font>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown05">
+                        <a class="dropdown-item" href="tai-khoan/dang-ky.htm">
+                            <font style="vertical-align: inherit;">
+                                <i class="fa fa-user-plus"></i> Đăng Ký
+                            </font>
+                        </a>
+                        <a class="dropdown-item" href="tai-khoan/dang-nhap.htm">
+                            <font style="vertical-align: inherit;">
+                                <i class="fa fa-sign-in"></i> Đăng Nhập
+                            </font>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <font style="vertical-align: inherit;">
+                                <i class="fa fa-sign-out"></i> Đăng Xuất
+                            </font>
+                        </a>
+                        <hr style="margin: 0;">
+                        <a class="dropdown-item" href="tai-khoan/sua.htm">
+                            <font style="vertical-align: inherit;">
+                                <i class="fa fa-pencil"></i> Sửa
+                            </font>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <table id="cart" class="table table-hover table-condensed">
+            <thead>
+                <tr>
+                    <th style="width:50%">Tên giày</th>
+                    <th style="width:10%">Giá</th>
+                    <th style="width:8%">Số lượng</th>
+                    <th style="width:22%" class="text-center">Thành tiền</th>
+                    <th style="width:10%"> </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-th="Product">
+                        <div class="row">
+                            <div class="col-sm-2 hidden-xs"><img
+                                    src="https://product.hstatic.net/1000143422/product/white_13042401007_giay_golf_ecco_nam__2__ae504ba054fa4db9b1072e85d1688663_master.jpg"
+                                    alt="Sản phẩm 1" class="img-responsive" width="100">
+                            </div>
+                            <div class="col-sm-12">
+                                <h4 class="nomargin">ECCO M GOLF BIOM C4</h4>
+                            </div>
+                        </div>
+                    </td>
+                    <td data-th="Price">12,500,000,000 đ</td>
+                    <td data-th="Quantity"><input class="form-control text-center" value="1" type="number">
+                    </td>
+                    <td data-th="Subtotal" class="text-center">12,500,000,000 đ</td>
+                    <td class="actions" data-th="">
+                        <button class="btn btn-info btn-sm"><i class="fa fa-edit"></i>
+                        </button>
+                        <button class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i>
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-th="Product">
+                        <div class="row">
+                            <div class="col-sm-2 hidden-xs"><img
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqFbzRHvd3QpI_pUCmlZeImyZDdNZXDdnM9Q&usqp=CAU"
+                                    alt="Sản phẩm 1" class="img-responsive" width="100">
+                            </div>
+                            <div class="col-sm-12">
+                                <h4 class="nomargin">Nike Trắng</h4>
+                               
+                            </div>
+                        </div>
+                    </td>
+                    <td data-th="Price">15,500,000,000 đ</td>
+                    <td data-th="Quantity"><input class="form-control text-center" value="1" type="number">
+                    </td>
+                    <td data-th="Subtotal" class="text-center">15,500,000,000 đ</td>
+                    <td class="actions" data-th="">
+                        <button class="btn btn-info btn-sm"><i class="fa fa-edit"></i>
+                        </button>
+                        <button class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i>
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-th="Product">
+                        <div class="row">
+                            <div class="col-sm-2 hidden-xs"><img src="data:image/jpeg;base64,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" alt="Sản phẩm 1"
+                                    class="img-responsive" width="100">
+                            </div>
+                            <div class="col-sm-12">
+                                <h4 class="nomargin">Nike viền đen</h4>
+                            </div>
+                        </div>
+                    </td>
+                    <td data-th="Price">11,500,000,000 đ</td>
+                    <td data-th="Quantity"><input class="form-control text-center" value="1" type="number">
+                    </td>
+                    <td data-th="Subtotal" class="text-center">11,500,000,000 đ</td>
+                    <td class="actions" data-th="">
+                        <button class="btn btn-info btn-sm"><i class="fa fa-edit"></i>
+                        </button>
+                        <button class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i>
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-th="Product">
+                        <div class="row">
+                            <div class="col-sm-2 hidden-xs"><img src="https://goccuanho.com/wp-content/uploads/2022/08/Gia%CC%80y-Nike-Air-Jordan-de%CC%82%CC%81-ti%CC%81m-rep-11-1.jpeg" alt="Sản phẩm 1"
+                                    class="img-responsive" width="100">
+                            </div>
+                            <div class="col-sm-12">
+                                <h4 class="nomargin">Giày Nike Air Jordan đế tím</h4>
+                                <p>
+                                    <font style="vertical-align: inherit;">Giày Nike Air Jordan đế tím rep 1:1</p>
+                            </div>
+                        </div>
+                    </td>
+                    <td data-th="Price">12,500,000,000 đ</td>
+                    <td data-th="Quantity"><input class="form-control text-center" value="1" type="number">
+                    </td>
+                    <td data-th="Subtotal" class="text-center">12,500,000,000 đ</td>
+                    <td class="actions" data-th="">
+                        <button class="btn btn-info btn-sm"><i class="fa fa-edit"></i>
+                        </button>
+                        <button class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i>
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td data-th="Product">
+                        <div class="row">
+                            <div class="col-sm-2 hidden-xs"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjcBZwSqBYOJ-5HsKxDMR0e7l4h8swlgUSVQ&usqp=CAU" alt="Sản phẩm 1"
+                                    class="img-responsive" width="100">
+                            </div>
+                            <div class="col-sm-12">
+                                <h4 class="nomargin">Giày Nike Air Jordan 1 Low Cardinal Red</h4>
+                                <p>
+                                    <font style="vertical-align: inherit;"></p>
+                            </div>
+                        </div>
+                    </td>
+                    <td data-th="Price">3,500,000,000 đ</td>
+                    <td data-th="Quantity"><input class="form-control text-center" value="1" type="number">
+                    </td>
+                    <td data-th="Subtotal" class="text-center">3,500,000,000 đ</td>
+                    <td class="actions" data-th="">
+                        <button class="btn btn-info btn-sm"><i class="fa fa-edit"></i>
+                        </button>
+                        <button class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr class="visible-xs">
+                    <td class="text-center"><strong>Tổng 100.000.000 đ</strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td><a href="san-pham.htm" class="btn btn-warning"><i class="fa fa-angle-left"></i> Tiếp
+                            tục mua hàng</a>
+                    </td>
+                    <td colspan="2" class="hidden-xs"> </td>
+                    <td class="hidden-xs text-center"><strong>Tổng tiền 115.000.000.000 đ</strong>
+                    </td>
+                    <td><a href="san-pham.htm" class="btn btn-success btn-block">Thanh toán <i
+                                class="fa fa-angle-right"></i></a>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+
+    <footer class="container" style="text-align: center;">
+        <hr style="border: 1px solid gray;">
+        <span>&copy; shop giày</span>
+
+    </footer>
+</body>
+
+</html>

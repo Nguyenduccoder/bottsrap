@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posts</title>
+    <!-- Cài đặt bs4-css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- Cai dat FA4.7 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Cai dat icon bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link href="https://fonts.cdnfonts.com/css/palace-script-mt" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+            <a class="navbar-brand" href="#">
+                <img style="height: 50px; border-radius: 50%; "
+                    src="./img/anh-giay-adidas.jpg"
+                <!-- <span style="font-family:'Palace Script MT', sans-serif; font-size: 40px;">
+                </span> -->
+                <span style="font-family:sans-serif; font-size: 25px;">
+                    Shop giày
+                </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05"
+                aria-controls="navbarsExample05" aria-expanded="false" aria-label="Chuyển đổi điều hướng thành">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarsExample05">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="trang-chu.htm">
+                            <i class="bi bi-house-heart"></i> Trang chủ
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gioi-thieu.htm">
+                            <i class="bi-file-person"></i> Giới Thiệu
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="lien-he.htm">
+                            <i class="bi-person-lines-fill"></i> Liên Hệ
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="tin-bai.htm">
+                            <i class="bi-newspaper"></i> Tin Bài
+                        </a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown05"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <font style="vertical-align: inherit;"><i class="bi-bag"></i> Mua Sắm</font>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown05">
+                            <a class="dropdown-item" href="danh-muc.htm">
+                                <i class="bi bi-list"></i> Danh Mục
+                            </a>
+                            <a class="dropdown-item" href="san-pham.htm">
+                                <i class="bi bi-tags"></i> Sản Phẩm
+                            </a>
+                            <a class="dropdown-item" href="thuong-hieu.htm">
+                                <i class="bi bi-apple"></i> Thương Hiệu
+                            </a>
+                            <a class="dropdown-item" href="thuong-hieu.htm">
+                                <i class="bi-cart-check"></i> Giỏ Hàng
+                            </a>
+                            <a class="dropdown-item" href="thanh-toan.htm">
+                                <i class="bi-cash"></i> Thanh Toán
+                            </a>
+                        </div>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link disabled" href="#">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Vô hiệu hóa</font>
+                            </font>
+                        </a>
+                    </li> -->
+
+                </ul>
+                <!-- <form class="form-inline my-2 my-md-0">
+                    <input class="form-control" type="text" placeholder="Tìm kiếm" fdprocessedid="mysh4n">
+                </form> -->
+                <div class=" dropdown">
+                    <a class=" dropdown-toggle" href="#" id="dropdown05" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        <font style="vertical-align: inherit;"> <i class="fa fa-user"></i>Tài Khoản</font>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown05">
+                        <a class="dropdown-item" href="tai-khoan/dang-ky.htm">
+                            <font style="vertical-align: inherit;">
+                                <i class="fa fa-user-plus"></i> Đăng Ký
+                            </font>
+                        </a>
+                        <a class="dropdown-item" href="tai-khoan/dang-nhap.htm">
+                            <font style="vertical-align: inherit;">
+                                <i class="fa fa-sign-in"></i> Đăng Nhập
+                            </font>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <font style="vertical-align: inherit;">
+                                <i class="fa fa-sign-out"></i> Đăng Xuất
+                            </font>
+                        </a>
+                        <hr style="margin: 0;">
+                        <a class="dropdown-item" href="tai-khoan/sua.htm">
+                            <font style="vertical-align: inherit;">
+                                <i class="fa fa-pencil"></i> Sửa
+                            </font>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <!-- Các chủ đề bài viết -->
+        <div class="nav-scroller py-1 mb-2">
+            <nav class="nav d-flex justify-content-between">
+                <a class="p-2 text-muted" href="https://stylemagazine.vn/chuyen-muc/phong-cach-song/">Phong Cách Sống</a>
+                <a class="p-2 text-muted" href="https://www.google.com/search?rlz=1C1OKWM_viVN1002VN1002&sxsrf=APwXEdcROjO4CY3c0UUlISoksf06EYetxQ:1687678941596&q=th%E1%BB%9Di+trang&tbm=isch&sa=X&ved=2ahUKEwiV7Lv-9d3_AhVkQPUHHbNCAd0Q0pQJegQIDRAB&biw=1366&bih=625&dpr=1">Thời Trang</a>
+                <a class="p-2 text-muted" href="https://zingnews.vn/cong-nghe.html">Công Nghệ</a>
+                <a class="p-2 text-muted" href="https://vnexpress.net/du-lich">Du Lịch</a>
+                <a class="p-2 text-muted" href="https://thanhnien.vn/suc-khoe.htm">Sức Khỏe</a>
+                <a class="p-2 text-muted" href="https://vietnamnet.vn/doi-song/am-thuc">Ẩm Thực</a>
+                <a class="p-2 text-muted" href="https://lifestyle.zingnews.vn/oto-xe-may.htmls">Xe</a>
+                <a class="p-2 text-muted" href="https://vietnamnet.vn/giai-tri">Giải Trí</a>
+                <a class="p-2 text-muted" href="https://vietnamnet.vn/kinh-doanh">Kinh Doanh</a>
+                <a class="p-2 text-muted" href="https://giaoduc.net.vn/">Giáo Dục</a>
+
+                <!-- <form class="form-inline my-2 my-md-0">
+                <input class="form-control" type="text" placeholder="Tìm kiếm" fdprocessedid="mysh4n">
+            </form> -->
+            </nav>
+        </div>
+
+        <!-- Thanh công cụ -->
+        <div class="my-2 btn-toolbar justify-content-between" role="toolbar" aria-label="Toolbar with button groups">
+            <div class="btn-group" role="group" aria-label="First group">
+                <button type="button" title="Hiển thị dạng lướt" class="btn btn-secondary"> <i
+                        class="bi-grid-fill"></i></button>
+                <button type="button" title="Hiển thị dạng danh sách" class="btn btn-secondary"> <i
+                        class="bi-list"></i></button>
+            </div>
+            <div class="input-group">
+                <!-- <div class="input-group-prepend">
+                    <div class="input-group-text" id="btnGroupAddon2">
+                        <i class="bi-search"></i>
+                    </div>
+                </div> -->
+                <input type="text" class="form-control" placeholder="Tìm kiếm" aria-label="Input group example"
+                    aria-describedby="btnGroupAddon2">
+                <div class="input-group-append">
+                    <button class="btn btn-dark btn-outline-secondary" type="button" fdprocessedid="ewx729"><i
+                            class="bi-search"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="album py-5 bg-light">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <img class="card-img-top"
+                                data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                                alt="Hình thu nhỏ [100%x225]"
+                                src="https://xwatch.vn/upload_images/images/2022/12/08/nguon-goc-ra-doi-nike-air-force-1.jpg"
+                                data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                            <div class="card-body">
+
+                                <h2>Nike air force one</h2>
+                                <p class="card-text">
+                                    Nike Air Force 1 là một trong những dòng sản phẩm đầu tiên của thương hiệu Nike được trình làng vào năm 1982 (tức sau 11 năm thành lập Công ty). Ngay từ những ngày đầu ra mắt, Nike Air Force 1 được nhà thiết kế ông Bruce Kilgore với định vị là dòng giày dành cho dân chơi bóng rổ và vô cùng thành công ở thời điểm bấy giờ về cả doanh thu lẫn độ phổ biến.
+                                   
+                                </p>
+                                <h5 class="">NIKE * 21/11/2022</h5>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                                            <i class="bi-heart-fill"></i> 68
+                                        </button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                                            <i class="bi-chat-fill"></i> 6
+                                        </button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                                            <i class="bi-eye-fill"></i> 100
+                                        </button>
+                                    </div>
+                                    <small class="text-muted">
+                                        9 phút
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <img class="card-img-top"
+                                data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                                alt="Hình thu nhỏ [100%x225]"
+                                src="https://1sneaker.vn/wp-content/uploads/2021/03/Air-Jordan-3-Cement-Michael-1-1024x683.jpg"
+                                data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                            <div class="card-body">
+
+                                <h2>jodan</h2>
+                                <p class="card-text">
+                                    1988 Dưới bàn tay của Tinker Hatfield – cha đẻ của dòng Nike Air Max huyền thoại đôi giày Air Joraen 3 được ra đời Jordan có in logo Nike Air (OG) và Jumpman (retro) ở phía sau sau gót, Đây là phiên bản có logo “Jumpman” ở phần lưỡi gà và đó chính là logo gắn liền với tên tuổi Jordan đến tận ngày nay.
+
+                                    
+                                </p>
+                                <h5 class="">JODAN * 03/1/2022</h5>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                                            <i class="bi-heart-fill"></i> 68
+                                        </button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                                            <i class="bi-chat-fill"></i> 6
+                                        </button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                                            <i class="bi-eye-fill"></i> 100
+                                        </button>
+                                    </div>
+                                    <small class="text-muted">
+                                        9 phút
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <img class="card-img-top"
+                                data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                                alt="Hình thu nhỏ [100%x225]"
+                                src="https://1sneaker.vn/wp-content/uploads/2021/08/do-thoai-mai-cua-giay-adidas-stan-smith.jpg"
+                                data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                            <div class="card-body">
+
+                                <h2>ADIDAS</h2>
+                                <p class="card-text">
+                                    giày Adidas Stan Smith cũng là một trong những đôi giày hiếm hoi còn giữ lại biểu tượng ba lá của Adidas. Giày Adidas Stan Smith có thiết kế basic, thường được làm từ da ở phần thân trên và lưỡi gà. Trải qua nhiều thập kỷ, thiết kế và kiểu dáng của giày Stan Smith gần như vẫn giữ nguyên như ngày đầu ra mắt. Các phiên bản qua các năm có sự khác
+                                     nhau về màu sắc nhưng toàn bộ thân giày vẫn lấy màu trắng làm chủ đạo.
+                                </p>
+                                <h5 class="">ADIDAS * 09/07/2022</h5>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                                            <i class="bi-heart-fill"></i> 68
+                                        </button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                                            <i class="bi-chat-fill"></i> 6
+                                        </button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                                            <i class="bi-eye-fill"></i> 100
+                                        </button>
+                                    </div>
+                                    <small class="text-muted">
+                                        9 phút
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <img class="card-img-top"
+                                data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                                alt="Hình thu nhỏ [100%x225]"
+                                src="https://1sneaker.vn/wp-content/uploads/2021/08/Giay-Mlb-Bigball-Chunky-P-Boston-Red-Sox-3D-1.jpg"
+                                data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                            <div class="card-body">
+
+                                <h2>MLB</h2>
+                                <p class="card-text">
+                                    Một trong những dòng “nổi bật” khi nhắc đến dòng giày MBL không thể bỏ lỡ đó là Giày MLB New York viết tắt “NY” ở thân giày. Hình dáng mạnh mẽ, hầm hố, đế cao tương đương 5 đến 6cm tạo sức hút nổi bật cho thiết kế riêng biệt này.
+
+
+                                </p>
+                                <h5 class="">MLB * 02/02/2022</h5>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                                            <i class="bi-heart-fill"></i> 68
+                                        </button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                                            <i class="bi-chat-fill"></i> 6
+                                        </button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                                            <i class="bi-eye-fill"></i> 100
+                                        </button>
+                                    </div>
+                                    <small class="text-muted">
+                                        9 phút
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <img class="card-img-top"
+                                data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                                alt="Hình thu nhỏ [100%x225]"
+                                src="https://1sneaker.vn/wp-content/uploads/2021/08/giay-vans-va-nhung-dieu-can-biet.jpg"
+                                data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                            <div class="card-body">
+
+                                <h2>VANS</h2>
+                                <p class="card-text">
+                                    Vans là nhà sản xuất có trụ sở tại Mỹ, chuyên cung cấp các loại giày
+                                     dành cho các môn thể thao mạo hiểm như trượt ván, xe đạp địa hình… 
+                                     Vans trở thành người bạn đồng hành của dân trượt ván khắp miền Nam
+                                      nước Mỹ từ năm 1970. Đôi giày Vans không chỉ là lựa chọn hàng đầu
+                                       của dân Skateboard thời đó mà còn là một item không thể thiếu 
+                                       trong tủ đồ của giới trẻ hiện nay.
+
+                                </p>
+                                <h5 class="">VANS * 21/12/2022</h5>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                                            <i class="bi-heart-fill"></i> 68
+                                        </button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                                            <i class="bi-chat-fill"></i> 6
+                                        </button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                                            <i class="bi-eye-fill"></i> 100
+                                        </button>
+                                    </div>
+                                    <small class="text-muted">
+                                        9 phút
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 box-shadow">
+                            <img class="card-img-top"
+                                data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                                alt="Hình thu nhỏ [100%x225]"
+                                src="https://1sneaker.vn/wp-content/uploads/2020/07/gi%C3%A0y-conver-%C4%91%C3%A1ng-mua.jpg"
+                                data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                            <div class="card-body">
+
+                                <h2>CONVERSE</h2>
+                                <p class="card-text">
+                                    Thiết kế đẳng cấp, tinh tế, phù hợp với nhiều outfit khác nhau.
+            Cực kỳ tiện lợi và êm ái, thoải mái vận động dù là các hoạt động ngoài trời hay thể thao trên mọi loại địa hình, mọi loại thời tiết.
+            Chắc chắn, bền bỉ theo thời gian với chất liệu cao cấp.
+            Cấu trúc đôi giày chuẩn vừa vặn với bàn chân.
+            Các đời của những đôi giày đã trở thành huyền thoại và vượt qua những khái nhiên về thời gian của sự thay đổi, có lẽ sẽ không bao giờ bạn lo lắng về lỗi mốt trời trạng.
+                                </p>
+                                <h5 class="">CONVERSE * 6/6/2022</h5>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                                            <i class="bi-heart-fill"></i> 68
+                                        </button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                                            <i class="bi-chat-fill"></i> 6
+                                        </button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">
+                                            <i class="bi-eye-fill"></i> 100
+                                        </button>
+                                    </div>
+                                    <small class="text-muted">
+                                        9 phút
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+        <!-- Phân trang -->
+        <div class=" btn-toolbar d-flex flex-row-reverse" role="toolbar" aria-label="Toolbar with button groups">
+            <div class="btn-group" role="group" aria-label="First group">
+                <button type="button" class="btn btn-secondary">1</button>
+                <button type="button" class="btn btn-secondary">2</button>
+                <button type="button" class="btn btn-secondary">3</button>
+                <button type="button" class="btn btn-secondary">4</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="container" style="text-align: center;">
+        <hr style="border: 1px solid gray;">
+        <span>&copy; 2022. Web Cá Nhân.</span>
+
+    </footer>
+
+    <!-- Cài đặt bs4-js -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+</body>
+
+<style>
+    .card-body {
+        min-height: 400px;
+    }
+</style>
+
+</html>
